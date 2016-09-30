@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.utiset.muffin.muffin.FeedItemActivity"
+    >
+        <android.support.v7.widget.CardView
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:layout_width="match_parent"
+            android:id="@+id/view">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/feed_item_newsimage"
+                        android:layout_width="fill_parent"
+                        android:layout_height="250dp"
+                        android:layout_alignParentLeft="true"
+
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true" />
+
+                    <com.utiset.muffin.customfonts.MyTextView
+                        android:id="@+id/feed_item_title"
+                        android:layout_marginLeft="16dp"
+                        android:layout_weight="0.2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/listsub1"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginTop="5dp"
+                        android:layout_centerHorizontal="true"
+                        android:textSize="14sp" />
+
+
+                    <com.utiset.muffin.customfonts.MyLightTextView
+                        android:id="@+id/feed_item_body"
+                        android:layout_marginLeft="16dp"
+                        android:layout_weight="0.2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/listsub1"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginTop="20dp"
+                        android:layout_centerHorizontal="true"
+                        android:textSize="12sp" />
+
+                    <Button
+                        android:id="@+id/feed_item_read_more"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:text="@string/full_article"
+                        android:layout_below="@+id/view"
+                        android:layout_alignRight="@+id/view"
+                        android:layout_alignEnd="@+id/view"
+                        android:layout_gravity="right"
+                        android:background="#ffffff" />
+
+                </LinearLayout>
+
+
+        </android.support.v7.widget.CardView>
+
+
+</RelativeLayout>

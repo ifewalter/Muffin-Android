@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    android:elevation="8dp"
+    android:layout_margin="5dp">
+
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="6dp"
+        android:background="#fff"
+        >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+            <FrameLayout
+            android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <ImageView
+                    android:id="@+id/newsimage1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/facebook_logo"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+                <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@xml/gradient"/>
+
+
+        </FrameLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/finestWhite"/>
+
+            <com.utiset.muffin.customfonts.MyTextView
+                android:id="@+id/newsname"
+                android:layout_marginLeft="0dp"
+                android:layout_weight="0.2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Fox News ."
+                android:textColor="#ffffff"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="0dp"
+                android:layout_centerHorizontal="true"
+                android:textSize="16dp" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+
+</LinearLayout>
